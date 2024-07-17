@@ -11,10 +11,10 @@ public class Authenticate {
 
     void setCorrectLogin() {
         do {
-            System.out.println("Enter Username: ");
+            System.out.print("Enter Username: ");
             username = scan.nextLine();
 
-            System.out.println("Enter Password: ");
+            System.out.print("Enter Password: ");
             password = scan.nextLine();
 
             if (username.equals(username) && password.equals(password)) {
