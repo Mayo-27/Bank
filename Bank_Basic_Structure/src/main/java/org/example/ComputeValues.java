@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 public class ComputeValues {
-    public static void main(String[] args) {
+    public static void main() {
         BankAccount logIn = new BankAccount("Nick", "2");
         logIn.displayMenu();
     }
@@ -61,11 +61,8 @@ class BankAccount {
         do {
 
             System.out.println("=====================================================================================");
-            System.out.println("Enter an Option");
-            System.out.println("=====================================================================================");
+            System.out.print("Enter an Option : ");
             option = scan.next().charAt(0);
-            System.out.println("\n");
-
             switch(option) {
 
                 case 'A':
