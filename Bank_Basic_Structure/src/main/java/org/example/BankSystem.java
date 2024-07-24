@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class ComputeValues {
+public class BankSystem {
     public static void main() {
         BankAccount logIn = new BankAccount();
         logIn.displayMenu();
@@ -12,13 +12,6 @@ public class ComputeValues {
 class BankAccount {
     int balance;
     int previousTransaction;
-    String customerName;
-    String customerId;
-
-    BankAccount(String cName, String cId) {
-        customerName = cName;
-        customerId = cId;
-    }
 
     void deposit(int amount) {
         if (amount > 0) {
@@ -49,8 +42,7 @@ class BankAccount {
         char option = '\0';
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Welcome " + customerName);
-        System.out.println("Your ID is " + customerId);
+        System.out.println("Welcome to Bank Malakas");
         System.out.println("\n");
         System.out.println("A. Check Balance");
         System.out.println("B. Deposit");
