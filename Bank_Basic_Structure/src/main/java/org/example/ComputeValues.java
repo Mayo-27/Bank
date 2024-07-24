@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ComputeValues {
     public static void main() {
-        BankAccount logIn = new BankAccount("Nick", "2");
+        BankAccount logIn = new BankAccount();
         logIn.displayMenu();
     }
 }
